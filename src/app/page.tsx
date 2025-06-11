@@ -1,31 +1,23 @@
 "use client";
-
-import CustomTxt from "@/components/customTxt/CustomTxt.component";
-import Image from "next/image";
 import styles from "./page.module.css";
 import Card from "@/components/card/Card.component";
 import { useState } from "react";
+import InfiniteScroll from "@/components/InfiniteScroll/InfiniteScroll.component";
 
 export default function Home() {
   const [scrollPersent, setScrollPersent] = useState(0);
   return (
     <>
       <main className={styles.main}>
-        <CustomTxt>
-          <h1>Hi this is </h1>
-          <Image src={"/img/saumya.png"} alt="saumya img" height={50} width={50} />
-          <h1>Saumya Sarma </h1>
-        </CustomTxt>
-        <CustomTxt>
-          <p>A full-stack developer with deep knowledge of REACT </p>
-          <Image src={"/icons/react.svg"} alt="react" height={50} width={50} />
-          <p>, Node.js </p>
-          <Image src={"/icons/nodejs.svg"} alt="nodejs" height={50} width={50} />
-          <p>and MongoDb </p>
-          <Image src={"/icons/mongodb.svg"} alt="mongodb" height={50} width={50} />
-        </CustomTxt>
+        <h1 className={styles.heading}>Hi this is Saumya Sarma,</h1>
+        <p className={styles.subHeading}>A Full-stack developer with deep knowledge of React, Nodejs and MongoDB</p>
+        <br />
+        <hr />
+        <br />
+        <h1 className={styles.routingHeading}> Route Accordingly:</h1>
         <br />
         <div className={styles.cardContainer}>
+
           <div className={styles.cardHolder}>
             <Card
               heading="Are you a Recruiter?"
@@ -55,6 +47,8 @@ To know more about me you can just click the button below..."
               link="/visitor"
             /></div>
         </div>
+
+        <br />
         <div className={styles.smallCardContainer} onScroll={e => {
           const scrollLeft = e.currentTarget.scrollLeft;
           const scrollWidth = e.currentTarget.scrollWidth;

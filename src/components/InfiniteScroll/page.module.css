@@ -1,0 +1,27 @@
+.parent {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgHolder {
+  display: flex;
+  animation: scroll 100s linear infinite;
+}
+
+.imgHolder img {
+  width: 300px;
+  /* Adjust as needed */
+  object-fit: cover;
+  margin-right: 10px;
+  /* Optional spacing between images */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-400%);
+  }
+}

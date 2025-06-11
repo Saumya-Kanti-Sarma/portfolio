@@ -1,7 +1,18 @@
 .main {
   width: calc(100vw - 20px);
   padding: 10px;
-  height: calc(100dvh - 70px);
+  min-height: calc(100dvh - 70px);
+  height: auto;
+}
+
+.heading,
+.subHeading,
+.routingHeading {
+  font-size: 3.5rem;
+}
+
+.routingHeading {
+  text-align: center;
 }
 
 .cardContainer {
@@ -84,6 +95,14 @@
 }
 
 @media (max-width: 1000px) {
+
+  .heading,
+  .subHeading,
+  .routingHeading {
+    font-size: 3rem;
+  }
+
+
   .smallCardContainer {
     display: block;
   }
