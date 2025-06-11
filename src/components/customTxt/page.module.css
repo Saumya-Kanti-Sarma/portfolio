@@ -39,7 +39,12 @@
   }
 
   .customTxt p {
-    font-size: 12px;
+    font-size: 13px;
+    word-wrap: normal;
+  }
+
+  .customTxt p img {
+    width: 25px;
   }
 
   .customTxt img {
