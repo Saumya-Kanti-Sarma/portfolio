@@ -11,6 +11,14 @@
   display: none;
 }
 
+body,
+html {
+  min-height: 100dvh;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 :root {
   --black: #363636;
   --white: #fff;
