@@ -11,7 +11,6 @@
   padding: 10px;
   padding-bottom: 20px;
   color: var(--white);
-  margin: 0 auto;
 }
 
 
@@ -52,6 +51,35 @@
 .btn:hover {
   opacity: 0.7;
   transform: scale(0.97);
+}
+
+@media (max-width:1320px) {
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile p {
+    font-size: 18px;
+  }
+
+  .about2 {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width:1080px) {
+
+  .profile p {
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width:500px) {
