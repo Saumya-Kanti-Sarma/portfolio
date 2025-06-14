@@ -4,6 +4,34 @@
   height: auto;
 }
 
+.hiremain {
+  height: 30vh;
+  width: calc(100vw - 80px);
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.hiremain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+.hiremain>* {
+  z-index: 1;
+}
+
 .main:nth-child(3) {
   background-color: #000;
 }

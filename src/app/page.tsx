@@ -7,6 +7,7 @@ import styles from "./page.module.css"
 import Project from "@/components/page/Projects/Project.page";
 import Certificates from "@/components/page/Certificates/Certificates.page";
 import Ratings from "@/components/page/Ratings/Ratings.page";
+import Hireme from "@/components/page/HireMe/Hireme.page";
 const page = () => {
   const nextSectionRef = useRef<HTMLDivElement>(null);
   function handleClick() {
@@ -30,6 +31,11 @@ const page = () => {
       </div>
       <div className={styles.main} >
         <Ratings />
+      </div>
+      <div className={styles.hiremain} >
+        <div>
+          <Hireme />
+        </div>
       </div>
     </>
   )
