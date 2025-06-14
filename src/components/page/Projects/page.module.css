@@ -6,6 +6,7 @@
   align-items: center;
   background-color: #082567;
   color: var(--white);
+  padding-bottom: 40px;
 }
 
 .projectContainer {

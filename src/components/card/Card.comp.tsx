@@ -17,7 +17,7 @@ const Card: React.FC<skillProps> = ({ heading, img, paragraph, link }) => {
         <h1>{heading}</h1>
         <p>{paragraph}</p>
       </div>
-      <Link href={link}>Learn More {">"}</Link>
+      <Link href={link} target='blank'>Learn More {">"}</Link>
     </div>
   )
 }
