@@ -23,6 +23,9 @@ const page = () => {
       <div className={styles.main} >
         <Project />
       </div>
+      <div className={styles.main} >
+        <h1>certifications</h1>
+      </div>
     </>
   )
 }

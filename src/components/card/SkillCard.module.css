@@ -24,6 +24,11 @@
   font-weight: 300;
 }
 
+.skillCard img {
+  width: 100px;
+  height: 100px;
+}
+
 .skillCard a {
   padding: 10px 20px;
   border: none;

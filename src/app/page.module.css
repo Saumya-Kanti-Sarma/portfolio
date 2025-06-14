@@ -3,3 +3,7 @@
   min-height: 100vh;
   height: auto;
 }
+
+.main:nth-child(3) {
+  background-color: #000;
+}

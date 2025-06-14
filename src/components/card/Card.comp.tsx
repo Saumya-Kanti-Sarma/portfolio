@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./SkillCard.module.css";
-import Image from 'next/image';
 import Link from 'next/link';
 
 interface skillProps {
@@ -10,11 +9,11 @@ interface skillProps {
   link: string;
   imgWidth?: number
 }
-const Card: React.FC<skillProps> = ({ heading, img, paragraph, link, imgWidth = 100 }) => {
+const Card: React.FC<skillProps> = ({ heading, img, paragraph, link }) => {
   return (
     <div className={styles.skillCard}>
       <div className={styles.skillTop}>
-        <Image src={img} alt='skill.img' height={imgWidth} width={imgWidth} />
+        <img src={img} alt='skill.img' />
         <h1>{heading}</h1>
         <p>{paragraph}</p>
       </div>
