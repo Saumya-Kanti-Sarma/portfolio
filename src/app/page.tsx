@@ -5,8 +5,8 @@ import Knowledge from "@/components/page/knowledge/knowledge.page";
 import { useRef } from "react";
 import styles from "./page.module.css"
 import Project from "@/components/page/Projects/Project.page";
-import CertificateData from "../../data/certificate";
 import Certificates from "@/components/page/Certificates/Certificates.page";
+import Ratings from "@/components/page/Ratings/Ratings.page";
 const page = () => {
   const nextSectionRef = useRef<HTMLDivElement>(null);
   function handleClick() {
@@ -27,6 +27,9 @@ const page = () => {
       </div>
       <div className={styles.main} >
         <Certificates />
+      </div>
+      <div className={styles.main} >
+        <Ratings />
       </div>
     </>
   )

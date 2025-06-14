@@ -1,0 +1,76 @@
+.RatingCard {
+  background-color: #fff;
+  max-width: 380px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  min-height: 250px;
+}
+
+.stars {
+  font-size: 2rem;
+  color: #ffd310;
+}
+
+.pfpImg {
+  width: 80px;
+  height: 80px;
+}
+
+.profile {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pfpTexts h3 {
+  margin-bottom: 5px;
+}
+
+.pfpTexts {
+  overflow: hidden;
+}
+
+.pfpTexts p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 12px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-overflow: ellipsis;
+}
+
+.pfpTexts p img {
+  width: 20px;
+  opacity: 0.8;
+}
+
+@media (max-width:400px) {
+  .RatingCard {
+    width: 80%;
+  }
+
+  .pfpImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pfpTexts h3 {
+    font-size: 16px;
+  }
+
+  .pfpTexts p {
+    gap: 5px;
+  }
+
+  .pfpTexts p img {
+    width: 15px;
+    opacity: 0.8;
+  }
+
+}
