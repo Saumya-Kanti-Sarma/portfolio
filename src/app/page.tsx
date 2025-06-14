@@ -8,6 +8,8 @@ import Project from "@/components/page/Projects/Project.page";
 import Certificates from "@/components/page/Certificates/Certificates.page";
 import Ratings from "@/components/page/Ratings/Ratings.page";
 import Hireme from "@/components/page/HireMe/Hireme.page";
+import Form from "@/components/page/Form/Form.page";
+import Footer from "@/components/Footer/Footer.cpmp";
 const page = () => {
   const nextSectionRef = useRef<HTMLDivElement>(null);
   function handleClick() {
@@ -29,7 +31,7 @@ const page = () => {
       <div className={styles.main} >
         <Certificates />
       </div>
-      <div className={styles.main} >
+      <div className={styles.mainRatings} >
         <Ratings />
       </div>
       <div className={styles.hiremain} >
@@ -37,6 +39,10 @@ const page = () => {
           <Hireme />
         </div>
       </div>
+      <div className={styles.main} >
+        <Form />
+      </div>
+      <Footer />
     </>
   )
 }

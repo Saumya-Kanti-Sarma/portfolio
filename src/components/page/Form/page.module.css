@@ -1,0 +1,127 @@
+.formWrapper {
+  display: flex;
+  min-height: 70vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+  overflow: hidden;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.aside {
+  flex: 1;
+  color: var(--black);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.aside h1 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.aside p {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.aside img {
+  width: 22px;
+  height: 22px;
+}
+
+.section {
+  flex: 1;
+  background: var(--black);
+  padding: 48px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  color: var(--white);
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form label {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  padding: 10px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f1f5f9;
+  transition: border 0.2s;
+  resize: none;
+}
+
+.form textarea {
+  height: 200px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border: 1.5px solid #6366f1;
+  outline: none;
+}
+
+.form button {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.form button:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 720px) {
+  .formWrapper {
+    flex-direction: column;
+    max-width: 98vw;
+    min-height: unset;
+    margin: 16px auto;
+  }
+
+  .aside,
+  .section {
+    padding: 32px 12px;
+  }
+
+  .aside h1 {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .form textarea {
+    height: 120px;
+  }
+}

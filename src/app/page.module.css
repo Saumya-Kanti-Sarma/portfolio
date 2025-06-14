@@ -1,7 +1,12 @@
-.main {
+.main,
+.mainRatings {
   width: 100vw;
   min-height: 100vh;
   height: auto;
+}
+
+.mainRatings {
+  background-color: #f8f8f8;
 }
 
 .hiremain {
